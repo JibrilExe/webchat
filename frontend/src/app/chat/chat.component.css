@@ -1,0 +1,39 @@
+
+.middle{
+    text-align: center;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column; /* Messages are stacked vertically */
+    max-width:60%;
+    max-height:400px;
+    overflow-y: auto;
+    margin: 0 auto; /* Center the chat container horizontally */
+    padding: 10px;
+}
+
+/* Chat bubble container */
+.bubbel {
+    display: inline-block;
+    max-width: 70%; /* Adjust the width as needed */
+    padding: 10px;
+    margin: 5px ;
+    border-radius: 15px;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+  
+  /* Sent message */
+.right {
+    background-color: #007bff; /* Blue background for sent messages */
+    color: white;
+    align-self: flex-end;
+}
+  
+  /* Received message */
+.left {
+    background-color: #f0f0f0; /* Light gray background for received messages */
+    color: #333;
+    align-self: flex-start;
+}

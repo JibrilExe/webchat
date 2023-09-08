@@ -1,0 +1,6 @@
+<h1>{{title}}</h1>
+<button *ngIf="!log.logged_in" routerLink="/login">Login</button>
+<button *ngIf="log.logged_in" routerLink="/users/{{log.username}}">Profile</button>
+<button routerLink="/weather">Weather forecast</button>
+
+<router-outlet></router-outlet>

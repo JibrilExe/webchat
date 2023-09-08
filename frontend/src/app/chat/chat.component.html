@@ -1,0 +1,11 @@
+<div>
+    <div #chatContainer class="chat-container" *ngFor="let msg of messages">
+        <div class="bubbel"[ngClass]="{'left': !msg.left, 'right': msg.left}">
+            {{msg.message}}
+        </div>
+    </div>
+</div>
+<div class="middle">
+    <input [(ngModel)]="message" (keyup.enter)="sendMessage()" placeholder="Type a message..." />
+    <button (click)="sendMessage()">Send</button>
+</div>

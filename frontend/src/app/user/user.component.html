@@ -1,0 +1,16 @@
+<p>Welcome {{user}}</p>
+<button (click)="logout()">Logout</button>
+
+<p>Friend list:</p>
+<div>
+    <div *ngFor="let usr of friended">
+        username: {{usr.username}}  friends since: {{usr.since}} <button routerLink="/users/{{user}}/chat/{{usr.username}}">Chat</button>
+    </div>
+</div>
+
+<p>Potential Friends:</p>
+<div>
+    <div *ngFor="let user of not_friended">
+        {{user}}  <button (click)="addFriend(user)">add friend</button>        
+    </div>
+</div>

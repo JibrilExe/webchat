@@ -1,0 +1,10 @@
+<h2>Het weer in <input id="name" [(ngModel)]="city" placeholder="Gent">:</h2>
+
+<button (click)="loadWeather()">Load Weather</button>
+<div *ngIf="!(weather == undefined)">
+    <div>land: {{weather.location.country}}</div>
+    <div>temperatuur: {{weather.current.feelslike_c}} &#8451; </div>
+    <div>windsnelheid: {{weather.current.wind_kph}} km/h </div>
+    <div>gevoelstemperatuur: {{weather.current.feelslike_c}} &#8451; </div>
+    <div>neerslag: {{weather.current.precip_mm}}mm   (gewone bui is 1tot3mm, flinke bui is 3-10mm en zware bui is meer)</div>
+</div>

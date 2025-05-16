@@ -8,7 +8,7 @@ import { LoginService } from './services/login.service';
 
 
 export class AppComponent {
-  title = 'BelgianPoliticShit';
+  title = 'Login or register to chat with your friends or just check the weather';
   logged = false;
   username = "";
   constructor(public log:LoginService) {
